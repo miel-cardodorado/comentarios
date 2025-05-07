@@ -6,41 +6,51 @@
   <title>Reseñas - Tu Opinión Nos Importa</title>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --gris: #cecdc5;
+      --beige: #ead8a1;
+      --gris-oscuro: #96907f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Libre Baskerville', serif;
-      background-color: #cecdc5;
+      background-color: var(--gris);
       color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
 
     header {
-      max-width: 600px;
+      max-width: 700px;
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     header h1 {
-      color: #96907f;
-      font-size: 2.5rem;
+      color: var(--gris-oscuro);
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
 
     header p {
-      color: #555;
-      font-size: 1.1rem;
+      color: #444;
+      font-size: 1.2rem;
     }
 
     #cusdis_thread {
       width: 100%;
       max-width: 700px;
-      background-color: #ead8a1;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -48,12 +58,26 @@
       font-size: 0.9rem;
       color: #666;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      #cusdis_thread {
+        padding: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Dejanos tu reseña</h1>
-    <p>Tu opinión nos ayuda a mejorar y también le da confianza a otras personas. ¡Gracias por tomarte el tiempo!</p>
+    <p>Contanos cómo fue tu experiencia. Tu opinión le da confianza a otras personas y nos ayuda a mejorar 💬</p>
   </header>
 
   <div id="cusdis_thread"
@@ -71,3 +95,4 @@
   </footer>
 </body>
 </html>
+
